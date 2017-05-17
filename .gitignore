@@ -1,5 +1,7 @@
 .DS_Store
-.idea
+.idea/
 # Dependency directories
-node_modules
+node_modules/
 package.json
+gulpfile.js
+assets/
