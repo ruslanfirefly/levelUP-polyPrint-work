@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.container-fluid {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+header .top-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #1e1e20;
+    font-family: "PT Sans", sans-serif;
+    font-size: .75em;
+}
+
+header .top-block .left {
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 7;
+    -ms-flex: 7;
+    flex: 7;
+    color: #ffffff;
+}
+
+header .top-block .left .white-local,
+header .top-block .left .white-phone,
+header .top-block .left .white-mail {
+    display: inline-block;
+    background: url("/imgs/white-contact.png") no-repeat;
+    margin-right: 10px;
+}
+
+header .top-block .left .white-local {
+    background-position: -5px -31px;
+    width: 8px;
+    height: 12px;
+}
+
+header .top-block .left .white-phone {
+    background-position: -5px -15px;
+    width: 12px;
+    height: 11px;
+}
+
+header .top-block .left .white-mail {
+    background-position: -5px -0px;
+    width: 12px;
+    height: 10px;
+}
+
+header .top-block .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+}
+
+header .top-block .right .social-btn {
+    height: 100%;
+    width: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+header .top-block .right .social-btn a {
+    display: inline-block;
+    background-color: #39b54a;
+    height: 100%;
+    width: 50px;
+    border: none;
+}
