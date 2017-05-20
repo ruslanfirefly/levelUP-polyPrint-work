@@ -1,30 +1,115 @@
 
-header,nav,main,footer{
-	display:block
+body {
+	background-color: #abb88e; 
+	font-family: "PT Sans","Helvetica Neue",Helvetica,Arial,sans-serif; 
 }
 
+
 .header {
-    background-attachment: fixed;
-}
-.header {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background: no-repeat 50%;
     background-size: cover;
-    min-height: 600px;
-    height: calc(100vh - 10px);
     text-align: center;
-    color: #bc1339;
+    
     padding-bottom: 60px;
     overflow: hidden;
 }
-h1{
+.top { 
+	position: relative;
+	display: flex;
+	justify-content: center;
+   	background-color: black;
+ 	height:30px;
+ 	color: white;
+	font-size: 0.7em;
+}
+.top-center{
+	position: relative;
+	width: 1140px;
+	display: flex;
+	justify-content: space-between;
+ 	align-items: center;
+}
+
+.local-top{
+	display: flex;
+	align-items: center;
+}
+.phon-top{
+	display: flex;
+	align-items: center;
+}
+.mail-top{
+	display: flex;
+	align-items: center;
+}
+.top-img{
+	margin-right: 10px;
+}
+.social-top{
+	background-color: #39b54a;
+	height:40px;
+	width: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.nav-bar{
+	background-color: white;
+	width: 100%;
+	height: 100px;
+	position: relative;
+    display: flex;
+ 	justify-content: space-around;
+ 	align-items: center;
+}
+
+.nav-bar-center{
+	position: relative;
+	width: 1140px;
+	display: flex;
+	justify-content: space-between;
+ 	align-items: center;
+}
+
+.slider{
+	position: relative
+	width: 100%;
+	height: 600px;
+	background-image: url(img/Shape-1.jpg); /* Путь к фоновому изображению */
+    background-color: #c7b39b; /* Цвет фона */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-attachment: fixed;
+	margin: 0;
+	background-size: cover;
+    min-height: 600px;
+    height: calc(100vh - 10px);
+    text-align: center;
+    color: #fff;
+    padding-bottom: 60px;
+    overflow: hidden;
+}
+/*video {
+    object-fit: cover;
+    display: inline-block;
+    vertical-align: baseline;
+}*/
+
+.slider-center{
+	position: relative;
+	width: 1140px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+ 	align-items: center;
+}
+
+
+
+
+
+/* h1{
 	font-size:2em;
 	margin:.67em 0}
-
-body {
-	background-color: #abb88e;
-}
