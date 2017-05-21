@@ -5,16 +5,28 @@
 	<title>polyPrint</title>
     <link rel="stylesheet"  href="css/reset.css">
 	<link rel="stylesheet"  href="css/style.css">
-<!-- Bootstrap -->
-	<link rel="stylesheet"  href="css/bootstrap.min.css">
 
-	<!-- Font Pt Sans -->
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+<!--1. Подключаем Font Pt Sans -->
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+
+<!-- 2. Подключаем Bootstrap 3.3.7 -->
+	<!-- Latest compiled and minified CSS -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 	<!-- Optional theme --> 
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	  <!-- jQuery -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<!-- Latest compiled and minified JavaScript -->
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 	
 </head>
 
 <body>
-<!--====================================header============================================-->
+<!--=====================================================header============================================-->
 <!-- Блок социальных сетей и сонтакты вверху страницы -->
  <div class="header">
  	<div class="top">
@@ -59,25 +71,76 @@
  			</div>
  		</div>
 <!-- Слайдер -->
- 		<div class="slider">
- 		<!--<video class="fullscreen-bg__video" autoplay="" loop="">
-        <source src="img/video/Slidre.mp4" type="video/mp4" codecs="avc1.42E01E, mp4a.40.2">
- 		</video>-->
-            <div class="slider-center">
+<!-- Индикаторы слайдов -->
+<div id="my_carousel" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#my_carousel" data-slide-to="0" class="active" ></li>
+			<li data-target="#my_carousel" data-slide-to="1"></li>
+			<li data-target="#my_carousel" data-slide-to="2"></li>
+		</ol>
+<!-- Контент слайда (slider wrap) -->		
+	<div class="carousel-inner" role="listbox">
+		
+		<div class="item active">
+			<img src="img/slider/Shape-6.jpg" alt=""/>
+			<div class="carousel-caption">
+				<div class="slider-center">
+					<div class="slider-logo-book"><img src="img\books1.svg"></div>
+ 					<div class="slider-text">
+ 					<h4>Печать книг на заказ в твердом и мягком переплете,<br/>
+ 					дизайн, верстка, редакторские правки</h4></div>
+					<a href="#" class="btn btn-outlined btn-theme btn-sm" data-wow-delay="0.7s">СДЕЛАТЬ ЗАКАЗ</a>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/slider/Shape-4.jpg" alt=""/>
+			<div class="carousel-caption">
+				<div class="slider-center">
+					<div class="slider-logo-Poly"><img src="img\Poly.svg"></div>
+ 					<div class="slider-text"><h4>Офсетная, широкоформатная и цифровая печать.<br/> 
+ 					Безупречное качество. Комфортные цены!</h4></div>
+					<a href="#" class="btn btn-outlined btn-theme btn-sm" data-wow-delay="0.7s">СДЕЛАТЬ ЗАКАЗ</a>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/slider/Shape-2.jpg" alt=""/>
+			<div class="carousel-caption">
+				<div class="slider-center">
+					<div class="slider-logo-Poly"><img src="img\Poly.svg"></div>
+ 					<div class="slider-text"><h4>Офсетная, широкоформатная и цифровая печать.<br/> 
+ 					Безупречное качество. Комфортные цены!</h4></div>
+					<a href="#" class="btn btn-outlined btn-theme btn-sm" data-wow-delay="0.7s">СДЕЛАТЬ ЗАКАЗ</a>
+				</div>
+			</div>
+		</div>
+	<!-- Элементы управления -->
+ 	 <a class="left carousel-control" href="#my_carousel" role="button" data-slide="prev">
+    		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+  	</a>
+  	<a class="right carousel-control" href="#my_carousel" role="button" data-slide="next">
+   			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+ 	 </a>
+	</div>
+</div> 
+
+           <!-- <div class="slider-center">
  			<div class="slider-logo-book"><img src="img\books.svg"></div>
  			<div class="slider-text"><h4>Печать книг на заказ в твердом и мягком переплете,<br/>
  			верстка, редакторские правки</h4></div>
-			<div class="slider-button"><a class="button_sl" href="#">СДЕЛАТЬ ЗАКАЗ</a></div>
-		</div>
+			<div class="slider-button"><a class="button_sl" href="#">СДЕЛАТЬ ЗАКАЗ</a></div> 
+			</div>-->
+	
  <!-- Придание контейнеру вид книги -->	 	
  		<div class="bottom-fold">
-			
 			<div></div>
 			<div></div>
-
 		</div>
-	</div>
-</div>
+
+
+</div> <!-- закрывает header -->	
+
    
 
 <!-- Содержание страницы -->
@@ -88,6 +151,22 @@
     <div class="row">
         <div class="col-xs-12">
         <h2>КНИГИ НАШИХ АВТОРОВ</h2>	
+        </div>
+        
+        <div class="col-md-3">
+        	<div class="services-img"><img src="img\sours\Book1_gray.png"></div>
+        </div>
+    	
+    	<div class="col-md-3">
+    		<div class="services-img"><img src="img\sours\Book2_gray.png"></div>
+    	</div>
+        
+        <div class="col-md-3">
+        	<div class="services-img"><img src="img\sours\Book3_gray.png"></div>
+        </div>	
+        
+        <div class="col-md-3">
+        	<div class="services-img"><img src="img\sours\Book4_gray.png"></div>
         </div>
     </div>
     <div class="row">
@@ -104,18 +183,37 @@
     </div>
     <div class="row">
     	<div class="col-xs-12"><h2>НАШИ УСЛУГИ</h2>
-    	<p>Мы помогаем вашему бизнесу развиваться и решим любую полиграфическую задачу <br/>
-от разработки дизайна до финальной сдачи тиража.</p>
+    	<h4>Мы помогаем вашему бизнесу развиваться и решим любую полиграфическую задачу <br/>
+    	от разработки дизайна до финальной сдачи тиража.</h4>
     	</div>
-    	<div class="col-md-3"><h4>Книгоиздание</h4></div>
-        <div class="col-md-3"><h4>Офсетная печать</h4></div>
-        <div class="col-md-3"><h4>Цифровая печать</h4></div>
-        <div class="col-md-3"><h4>Широкоформатная печать</h4></div>
-        <div class="col-md-3"><h4>Тиснение</h4></div>
-        <div class="col-md-3"><h4>Копировально-множительный
- центр</h4></div>
-        <div class="col-md-3"><h4>Послепечатная обработка</h4></div>
-        <div class="col-md-3"><h4>Дизайн</h4></div>
+    	<div class="col-md-3">
+    		<div class="services-img"><img src="img\sours\U1.jpg"><h4>Книгоиздание</h4><p>Большим и малым тиражем</p></div>
+    	</div>
+        	<div class="col-md-3"><div class="services-img"><img src="img\sours\U2.jpg"><h4>Офсетная печать</h4><p>Для больших тиражей</p></div>
+        </div>
+        <div class="col-md-3">
+        	<div class="services-img"><img src="img\sours\U3.jpg"><h4>Цифровая печать</h4><p>Для небольших
+и срочных задач</p></div>
+        </div>	
+        <div class="col-md-3">
+        	<div class="services-img"><img src="img\sours\U4.jpg"><h4>Широкоформатная печать</h4><p>Для крупных размеров</p></div>
+        </div>	
+        <div class="col-md-3">
+			<div class="services-img"><img src="img\sours\U5.jpg">
+        	<h4>Тиснение</h4><p>Для люксовых и имеджевых</p></div>
+        </div>
+        <div class="col-md-3">
+			<div class="services-img"><img src="img\sours\U6.jpg">
+        	<h4>Копировально-множительный центр</h4><p>От фотографий до плакатов</p></div>
+        </div>
+        <div class="col-md-3">
+			<div class="services-img"><img src="img\sours\U7.jpg">
+        	<h4>Послепечатная обработка</h4><p>Последние штрихи</p></div>
+        </div>	
+        <div class="col-md-3">
+			<div class="services-img"><img src="img\sours\U8.jpg">
+        	<h4>Дизайн</h4><p>Разработка дизайна</p></div>
+        </div>
     </div>
     <div class="row">
         <div class="col-md-3"></div>
