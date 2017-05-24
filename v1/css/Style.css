@@ -1,0 +1,109 @@
+body{
+    background: #D3D3D3	;
+}
+
+.top-header{
+    font: 12px Arial, sans-serif;
+    background: #000;
+    height: 40px;
+    display: flex;
+    color: white;
+    position: relative;
+    justify-content: space-around;
+}
+.img-top{
+    margin-right: 5px;
+}
+.addres{
+    display: flex;
+    align-items: center;
+}
+.phone{
+    display: flex;
+    align-items: center;
+}
+.email{
+    display: flex;
+    align-items: center;
+}
+.social {
+    float: right;
+    font-size: 0;
+}
+
+.social .item {
+    display: inline-block;
+    vertical-align: top;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(57, 181, 74, .8);
+    transition: 0.3s ease;
+}
+
+.social .item.tw {
+    background-image: url('../img/svg/tw.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    transition: 0.3s ease;
+}
+
+.social .item.tw:hover {
+    background-image: url('../img/svg/tw_w.svg');
+    background-color: rgba(57, 181, 74, 1);
+}
+
+.social .item.fb {
+    background-image: url('../img/svg/fb.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    transition: 0.3s ease;
+}
+
+.social .item.fb:hover {
+    background-image: url('../img/svg/fb_w.svg');
+    background-color: rgba(57, 181, 74, 1);
+}
+
+.social .item.gplus {
+    background-image: url('../img/svg/gplus.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    transition: 0.3s ease;
+}
+
+.social .item.gplus:hover {
+    background-image: url('../img/svg/gplus_w.svg');
+    background-color: rgba(57, 181, 74, 1);
+}
+
+.social .item.in {
+    background-image: url('../img/svg/in.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    transition: 0.3s ease;
+}
+
+.social .item.in:hover {
+    background-image: url('../img/svg/in_w.svg');
+    background-color: rgba(57, 181, 74, 1);
+}
+
+.social .item.gplus {
+    background-image: url('../img/svg/gplus.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    transition: 0.3s ease;
+}
+
+.social .item.in {
+    background-image: url('../img/svg/in.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    transition: 0.3s ease;
+}
