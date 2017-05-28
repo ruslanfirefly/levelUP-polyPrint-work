@@ -81,31 +81,54 @@ body {
 	align-items: center;
 }
 
-.gear{
-	position: relative;
-
-}
-
 
 /***** menu *****/
 .menu {
 	float:right;
+	font-size: 16px;
+
+
 }
 
 .menu li {
 	float:left;
 	position:relative;
 	padding-left:35px;
+	text-transform: uppercase
+
+	
+	
 }
 .menu li a {
 	display:inline-block;
-	font-size:20px;
 	line-height:1.2em;
 	color:#4d4d4d;
+	text-decoration:none;
+	text-transform: uppercase
+	
+
 }
 .menu li a.active, .menu > li > a:hover {
 	color:#39b54a;
+
+	text-transform: uppercase
 }
+
+.icon-text{
+
+   
+
+}
+.icon-user{
+  margin-right: 5px;
+  margin-bottom:5px;
+
+}
+.icon-enter{
+  margin-right: 5px;
+  margin-bottom:5px;
+}
+
 
 
 a {
@@ -114,11 +137,10 @@ a {
 }
 a:hover {
 	text-decoration:none;
+	font-size: larger;
 }
 
-.menu li a {
-	text-decoration:none;
-}
+
 
 /***** slider *****/
 .slider-center{
@@ -252,4 +274,5 @@ h2, h3, h4, p {
 	flex-direction: column;
 	justify-content: center;
  	align-items: center;
+	
 }
