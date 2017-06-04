@@ -264,6 +264,43 @@ nav{
 	padding-bottom: 5px;
 	border-bottom: 2px solid #39b54a;
 }
+/*--- ВЫПАДАЮЩИЕ ПУНКТЫ ---*/
+.sf-menu ul{
+	list-style:none;
+	position:absolute;
+	left:-9999px; /* Скрываем за экраном, когда не нужно (данный метод лучше, чем display:none;) */
+	opacity:0; /* Устанавливаем начальное состояние прозрачности */
+	-webkit-transition:0.25s linear opacity; /* В Webkit выпадающие пункты будут проявляться */
+}
+.sf-menu ul li{
+	float:none;
+	text-transform: none;
+	background:#fff; /* задает фон пунктов подменю*/
+	border-top: 1px solid #eaeaea;
+	top:10px;/* отступ, подменю начинается от края линии*/
+	left: -25px; /*выравнивает по центру относительно главного пункта меню*/
+	width: 100px; /* задает ширину пунктов подменю*/
+}
+.sf-menu ul a{
+	white-space:nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
+	display:block;
+	text-transform: none;
+    padding: 8px 15px;
+    font-weight: 100;
+}
+.sf-menu  li:hover ul{ /* Выводим выпадающий пункт при наведении курсора */
+	left:0; /* Приносим его обратно на экран, когда нужно */
+    opacity:1; /* Делаем непрозрачным */
+}
+
+.sf-menu li:hover ul a{ /* Изменяем некоторые стили верхнего уровня при выводе выпадающего пункта */
+    text-decoration:none;
+    -webkit-transition:-webkit-transform 0.075s linear;
+}
+.sf-menu li:hover ul li a:hover{ /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный пункт */
+    text-decoration:underline;
+    background:rgba(51,51,51,0.75); /* Будет полупрозрачным */
+}
 
 /***** О нас *****/
 
@@ -271,27 +308,12 @@ nav{
 	color: #39b54a;
 	margin-right:8px;
 }
-
 .fa-check:before {
     content: "\f14a";
 }
 
-
 /***** Новости *****/
-/*
-.inform{
-	font-size: 12px;
-	text-align: right!important;
-}
-.inform a{
-	color: #39b54a !important;
-	text-decoration: none !important;
-}
-.inform a:focus, a:hover, a:visited {
-    color: #39b54a !important;
-	text-decoration: none !important;
-}	
-*/
+
 time{
 	font: 18px/28px 'PT Sans',sans-serif;
 	font-weight: bold;
@@ -306,7 +328,6 @@ time{
 	margin: 10px 0 10px;
 	margin-left:20px;
 }
-
 .block{
 	position:relative;
 	overflow:hidden;
@@ -324,14 +345,12 @@ time{
 }
 
 /***** Услуги *****/
-
 .services_col {
 	position: relative;
     background-color: #fff;
     text-align: center;
     height: 390px;
 }
-
 .services_col:hover {
 	position: relative;
     background-color: #f5f5f5;
@@ -339,19 +358,16 @@ time{
     height: 390px;
 }
 .services_link{
-
 }
 .linkbox{
 	margin-bottom: 30px;
 }
-
 .services_img {
     width: 100%;
 }
 .check_img {
 text-align: center;
 }
-
 .services_text{
 	font-size: 15px!important;
     font-weight: bold !important;
@@ -382,204 +398,7 @@ text-align: center;
 	line-height: 22px;
 }
 
-
-/***** Меню *****/
-/*
-#stuck_container{
-	background:#fff;
-	height:auto;
-	-webkit-transition:all 0.4s ease;-moz-transition:all 0.4s ease;
-	-ms-transition:all 0.4s ease;
-	-o-transition:all 0.4s ease;
-	transition:all 0.4s ease;}
-	
-	.isStuck{
-		-webkit-transition:all 0.2s ease;
-		-moz-transition:all 0.2s ease;
-		-ms-transition:all 0.2s ease;
-		-o-transition:all 0.2s ease;
-		transition:all 0.2s ease;
-		box-shadow:5px 1px 5px rgba(0,0,0,0.5);
-		}
-	
-	.isStuck .menuBox{
-		margin:0;
-		-webkit-transition:all 0.4s ease;
-		-moz-transition:all 0.4s ease;
-		-ms-transition:all 0.4s ease;
-		-o-transition:all 0.4s ease;
-		transition:all 0.4s ease;}
-	
-	@media (max-width: 979px){
-		#stuck_container{
-			position:relative!important;
-			box-shadow:none;
-		}
-		.pseudoStickyBlock{
-			height:0!important;
-		}
-	}
-	
-	@media (max-width: 767px){
-		#stuck_container{
-			height:50px;
-			}
-	}
-
-nav>.sf-menu {
-    z-index: 990;
-    position: relative;
-    text-align: center;
-}
-nav{
-	margin:0;
-	position:relative;
-	padding:0;
-}
-.sf-menu ul{
-	position:absolute;
-	top:-999px;
-	display:none;
-}
-.sf-menu li {
-    display: inline-block;
-    position: relative;
-    text-transform: uppercase;
-    padding: 11px 0;
-}
-.sf-menu>li+li{
-	margin-left:40px;
-}
-.sf-menu>li>a {
-    display: inline;
-    text-align: center;
-    position: relative;
-    color: #414042;
-    font: 400 13px/30px 'PT Sans',sans-serif;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 1.6px;
-}
-.sf-menu>li+li:after{
-	content:"";
-	position:absolute;
-	top:22px;
-	left:-25px;
-	width:7px;
-	height:7px;
-	background:#39b54a;
-	-webkit-border-radius:3px;
-	-moz-border-radius:3px;
-	border-radius:3px;
-}
-.sf-menu>li>ul>li{
-	float:none;
-	position:static;
-}
-.sf-menu>li>a{
-	display:inline;
-	text-align:center;
-	position:relative;
-	color:#414042;
-	font:400 13px/30px 'Tinos',sans-serif;
-	text-transform:uppercase;
-	text-decoration:none;
-	letter-spacing:1.6px;
-}
-.sf-menu>li>a:hover,.sf-menu>li.current>a{
-	position:relative;
-	text-decoration:none;
-	color:#39b54a;
-}
-
-.sf-menu>li>.sf-with-ul:after{
-	position:absolute;
-	content:'';
-	left:40%;
-	top:22px;
-	width:5px;
-	background:url(../img/icon/arrow_menu.png) 0 0 no-repeat;
-	height:4px;pointer-events:none;
-	z-index:999;
-	display:block;
-}
-.sf-menu li ul{
-	position:absolute;
-	z-index:999;
-	top:51px;
-	left:-27px;
-	padding:1px 0 1px;
-	width:94px;
-	background:#39b54a;
-	text-align:center;
-}
-.sf-menu li ul li{
-	position:relative;
-	display:block;
-	text-align:center;
-	float:none!important;
-	padding:0 0 4px;
-	cursor:default;
-}
-.sf-menu li ul li+li{
-	border-top:1px solid #39b54a;
-}
-.sf-menu li ul li a{
-	position:relative;
-	text-transform:uppercase;
-	z-index:999;
-	display:inline;
-	color:#fff;
-	font:400 12px/14px 'Tinos',sans-serif;
-	text-decoration:none;
-}
-.sf-menu>li>ul>li>a.sf-with-ul:after{
-	background:url(../img/icon/arrow_menu.png) 0 0 no-repeat;
-	content:'';
-	position:absolute;
-	display:block;
-	width:12px;
-	height:6px;
-	top:5px;
-	right:-20px;
-	pointer-events:none;
-	z-index:999;
-}
-.sf-menu>li>ul>li>a.sf-with-ul:after{}
-.sf-menu li li a:hover,.sf-menu li li>a{
-	color:#414042;
-	text-decoration:none;
-}
-.sf-menu li li ul{
-	position:absolute;
-	left:95px;
-	top:0px;
-	background:39b54a;
-	padding:0;
-	width:100px;
-}
-.sf-menu li li ul li+li{
-	border-top:1px solid #6a8082;
-}
-.sf-menu li li ul li a{
-	color:#fff;
-	padding-right:0;
-}
-.sf-menu li li ul li a:hover{
-	color:#414042;
-	text-decoration:none;
-}
-
-.sf-menu>li>a:hover, .sf-menu>li.current>a {
-    position: relative;
-    text-decoration: none;
-    color: #39b54a;
-}
-
 /***** content sections *****/
-
-
-
 
 .blockquote{
 	position:relative;
@@ -589,8 +408,6 @@ nav{
 	font:normal 22px/22px 'Tinos';
 	color:#000;
 }
-
-
 
 /***** slider *****/
 .slider-center{
