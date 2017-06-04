@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>polyPrint</title>
     <link rel="stylesheet"  href="css/reset.css">
-	<link rel="stylesheet"  href="css/style.css">
+	   <link rel="stylesheet"  href="css/style.css">
 
 <!-- 2. Подключаем Bootstrap 3.3.7 -->
 	<!-- Latest compiled and minified CSS -->
@@ -15,6 +15,8 @@
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   	<!-- Latest compiled and minified JavaScript -->
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+   
+    <script src="js/bottom-nav-scroll.js"></script>
 
     <!--1. Подключаем Font Pt Sans -->
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
@@ -33,19 +35,25 @@
 <!--=========================header=======================-->
 
 <header id="header">
+  <div class="top">
     <div class="container">
         <div class="row">
-            <div class="grid_12">
-                <h1><a href="index.html"><img src="img/logo_izdat.svg" alt="Издательство"></a></h1>
-            </div>     
-        </div>
-    </div>
-    <div id="stuck_container" class="" style="position: relative; top: 0px; z-index: 999; left: 0px; right: 0px; margin: 0px auto; text-align: center;">
+            <div class="m-wrapper">
+              <a href="index.html"><img src="img/logo.svg" alt="Издательство"></a>
+              <a href="#" class="phone"><i class="fa fa-phone"></i><span class="phone_link">8 (812) 552-77-17</span></a>
+              <a href="#" class="mail"><i class="fa fa-envelope"></i><span>info@gpupress.ru</span></a>
+              <a href="#" class="cabinet" target="_blank"><i class="fa fa-user"></i><span>Личный кабинет</span></a>
+            </div>
+        </div>     
+    </div>  
+  </div>
+
+  <div id="bottom-nav">
         <div class="container">
             <div class="row">        
-                <div class="grid_12">
+                <div class="m-wrapper1">
                 <nav>
-                    <ul class="sf-menu sf-js-enabled sf-arrows">
+                    <ul class="sf-menu">
                         <li class="current"><a href="index.html" class="sf-with-ul">О нас</a>
                             <ul style="display: none;">
                                 <li><a href="#">Новости</a></li>
