@@ -9,7 +9,7 @@ html, body {
 }
 
 h1 a img {
-	margin:10px 0 10px;
+	margin:30px 0 20px;
 	position:relative;
 }
 
@@ -73,6 +73,20 @@ p {
     text-align: center;
 }
 
+
+a{
+	color: #585858 !important;
+	text-decoration: none !important;
+}
+
+a:hover {
+    color: #39b54a !important;
+	text-decoration: none !important;
+}
+
+
+
+
 /***** dividers *****/
 
 .divider {
@@ -95,13 +109,62 @@ p {
 	width: 20%;
 	height: 3px;
 }
+.divider2 {
+	position:relative;
+	overflow:hidden;
+	margin:0;
+	border-top:1px solid #e5eaea;
+}
 
 /***** Шапка *****/
 #header {
     position: relative;
-    display: block;
+	display: flex;
+	flex-direction:column;
     text-align: center;
-    padding-bottom: 26px;
+}
+
+.top{
+	position: relative;
+	display: flex;
+	flex-direction:row;
+	align-items:center; 
+	background: #fff;
+    border-bottom: #e5eaea 1px solid;
+    height: 70px;
+	width:100%;
+}
+
+.m-wrapper{
+	position:relative;
+	display: flex;
+	flex-direction:row;
+	justify-content: space-between;
+	align-items:center;  
+}
+ .phone i,.mail i {
+    border-radius: 100%;
+    display: block;
+    float: left;
+    border: 1px #e5eaea solid;
+    width: 39px;
+    height: 39px;
+ 	color: #585858;
+    padding: 11px 11px;
+}
+.phone span, .mail span {
+	float: left;
+    font-size: 14px;
+    padding: 11px 10px;
+}
+
+.cabinet {
+    float: right;
+    border-radius: 50px;
+    border: 1px solid #21a649;
+    margin: 9px 10px;
+    padding: 10px 20px;
+    transition: border 0.15s ease-in;
 }
 
 .head_brdr{
@@ -147,6 +210,60 @@ p {
 	text-align:center;
 }	
 
+/***** Меню *****/
+#bottom-nav{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 300;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.19);
+}
+.m-wrapper1{
+	position:relative;
+	display: flex;
+	flex-direction:row;
+	justify-content: center;
+	align-items:center;  
+
+}
+
+nav{
+	margin:0;
+	position:relative;
+	text-align: center;
+	padding:0;
+}
+.sf-menu li {
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+}
+.sf-menu>li+li{
+	margin-left:30px;
+	margin-top: 5px;
+}
+
+.sf-menu>li>a {
+    display: inline;
+    text-align: center;
+    position: relative;
+    color: #585858;
+    font: 400 14px/30px 'PT Sans',sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1.6px;
+}
+.sf-menu>li>a:hover,.sf-menu>li.current>a{
+	position:relative;
+	text-decoration:none;
+	color:#39b54a;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #39b54a;
+}
 
 /***** О нас *****/
 
@@ -159,21 +276,22 @@ p {
     content: "\f14a";
 }
 
-/***** Новости *****/
 
+/***** Новости *****/
+/*
 .inform{
 	font-size: 12px;
 	text-align: right!important;
 }
 .inform a{
 	color: #39b54a !important;
-	text-decoration: none !important;;
+	text-decoration: none !important;
 }
 .inform a:focus, a:hover, a:visited {
     color: #39b54a !important;
-	text-decoration: none !important;;
+	text-decoration: none !important;
 }	
-
+*/
 time{
 	font: 18px/28px 'PT Sans',sans-serif;
 	font-weight: bold;
@@ -266,7 +384,7 @@ text-align: center;
 
 
 /***** Меню *****/
-
+/*
 #stuck_container{
 	background:#fff;
 	height:auto;
@@ -304,7 +422,7 @@ text-align: center;
 	
 	@media (max-width: 767px){
 		#stuck_container{
-			height:62px;
+			height:50px;
 			}
 	}
 
@@ -316,7 +434,8 @@ nav>.sf-menu {
 nav{
 	margin:0;
 	position:relative;
-	padding:0;}
+	padding:0;
+}
 .sf-menu ul{
 	position:absolute;
 	top:-999px;
@@ -329,7 +448,7 @@ nav{
     padding: 11px 0;
 }
 .sf-menu>li+li{
-	margin-left:28px;
+	margin-left:40px;
 }
 .sf-menu>li>a {
     display: inline;
@@ -344,10 +463,10 @@ nav{
 .sf-menu>li+li:after{
 	content:"";
 	position:absolute;
-	top:24px;
-	left:-18px;
-	width:5px;
-	height:5px;
+	top:22px;
+	left:-25px;
+	width:7px;
+	height:7px;
 	background:#39b54a;
 	-webkit-border-radius:3px;
 	-moz-border-radius:3px;
