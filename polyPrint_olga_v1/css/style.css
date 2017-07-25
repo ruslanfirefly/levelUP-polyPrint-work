@@ -1,0 +1,278 @@
+html {
+	width:100%;
+}
+
+body {
+	background-color: #abb88e; 
+	font-family: "PT Sans","Helvetica Neue",Helvetica,Arial,sans-serif; 
+	min-width:1140px;
+	background:#cfc
+}
+
+.header {
+	width:100%;
+    background:url(img/Shape-1.jpg) ;
+	position:relative;
+    overflow: hidden;
+}
+
+/***** top black lin *****/
+.top { 
+	position: relative;
+	display: flex;
+	justify-content: center;
+   	background-color: black;
+ 	height:30px;
+ 	color: white;
+	font-size: 0.7em;
+}
+.top-center{
+	position: relative;
+	width: 1140px;
+	display: flex;
+	justify-content: space-between;
+ 	align-items: center;
+}
+
+.local-top{
+	display: flex;
+	align-items: center;
+}
+.phon-top{
+	display: flex;
+	align-items: center;
+}
+.mail-top{
+	display: flex;
+	align-items: center;
+}
+.top-img{
+	margin-right: 10px;
+}
+.social-top{
+	background-color: #39b54a;
+	height:40px;
+	width: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.nav-bar{
+	background-color: white;
+	width: 100%;
+	height: 100px;
+	position: relative;
+    display: flex;
+ 	justify-content: space-around;
+ 	align-items: center;
+}
+
+.nav-bar-center{
+	position: relative;
+	width: 1140px;
+	display: flex;
+	justify-content: space-between;
+ 	align-items: center;
+}
+.nav{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/***** menu *****/
+.menu {
+	float:right;
+	font-size: 16px;
+
+
+}
+
+.menu li {
+	float:left;
+	position:relative;
+	padding-left:35px;
+	text-transform: uppercase
+
+	
+	
+}
+.menu li a {
+	display:inline-block;
+	line-height:1.2em;
+	color:#4d4d4d;
+	text-decoration:none;
+	text-transform: uppercase
+	
+
+}
+.menu li a.active, .menu > li > a:hover {
+	color:#39b54a;
+
+	text-transform: uppercase
+}
+
+.icon-text{
+
+   
+
+}
+.icon-user{
+  margin-right: 5px;
+  margin-bottom:5px;
+
+}
+.icon-enter{
+  margin-right: 5px;
+  margin-bottom:5px;
+}
+
+
+
+a {
+	color:#39b54a;
+	outline:none;
+}
+a:hover {
+	text-decoration:none;
+	font-size: larger;
+}
+
+
+
+/***** slider *****/
+.slider-center{
+	position: relative;
+	width: 1140px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+ 	align-items: center;
+ 	padding-bottom: 100px;
+}
+ol.carousel-indicators{
+	padding-bottom: 40px;
+}
+.slider-logo-book{
+	padding-bottom: 20px;
+}
+.slider-logo-Poly{
+	padding-bottom: 0px;
+}
+.slider-text h4 {
+	color: white;
+	text-align: center;
+	line-height: 1.5;
+	padding-bottom: 30px;
+}
+
+/******* Slider button********/
+.btn {
+	letter-spacing: 1px;
+	text-decoration: none;
+	background: none;
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    white-space: nowrap;
+	font-size:14px;
+	line-height:20px;
+	font-weight:700;
+	text-transform:uppercase;
+	border: 3px solid;
+	padding:8px 20px;
+}
+
+.btn-outlined {
+    border-radius: 0;
+    -webkit-transition: all 0.3s;
+       -moz-transition: all 0.3s;
+            transition: all 0.3s;
+}
+
+.btn-outlined.btn-theme {
+    background: none;
+    color: white;
+	border-color: white;
+}
+
+.btn-outlined.btn-theme:hover,
+.btn-outlined.btn-theme:active
+.btn-outlined.btn-theme:visited
+ {
+    color: #FFF;
+    background: #39b54a;
+    border-color: #005e20;
+}
+.btn-sm{
+	font-size:12px;
+	line-height:16px;
+	border: 2px solid;
+	padding:8px 15px;
+}
+
+/********************************************************************
+/***** Slider bottom *****/
+.bottom-fold {
+	position: absolute;
+	width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+}
+.bottom-fold :first-child{
+	border-radius: 0 50px 0 0;
+}
+.bottom-fold :nth-child(2) {
+    border-radius: 50px 0 0 0;
+}
+.bottom-fold div{
+	background-color: white;
+	flex-basis: 50%;
+	max-width: 50%;
+}
+*, :after, :before {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+div {
+    display: block;
+}
+h2 {
+	padding-bottom: 30px;
+}
+h4{
+	padding-bottom: 30px;
+	font-style: italic;
+}
+h2, h3, h4, p {
+	text-align: center;
+	line-height: 1,5;
+	}
+
+.services-img{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+ 	align-items: center;
+}
+.col-xs-12 {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+ 	align-items: center;
+	
+}

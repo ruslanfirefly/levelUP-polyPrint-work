@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>polyPrint</title>
+  <link rel="stylesheet"  href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- 2. Подключаем Bootstrap 3.3.7 -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Optional theme --> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+  <script src="js/bottom-nav-scroll.js"></script>
+  <script src="js/map.js"></script>
+
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"> 
+
+</head>
+
+<style type="text/css">
+  body{
+    font-family: 'p22-underground', sans-serif !important;
+  }
+</style>
+
+<body>
+
+  <!--=========================header=======================-->
+  <header id="header">
+    <div class="top-nav">
+      <div class="container">
+        <div class="row">
+          <div class="m-wrapper">
+            <nav class="nav-bar">
+              <div id="logo"><img src="img/logo.svg" alt="Издательство"></div>
+              <label for="drop" class="toggle">Menu</label>
+              <input type="checkbox" id="drop" />
+              <ul class="menu">
+                <li class="current"> 
+                  <!-- Выпадающее меню -->
+                  <label for="drop-1" class="toggle">О нас +</label>
+                  <a href="#" class="hvr-underline-from-left">О нас</a>
+                  <input type="checkbox" id="drop-1"/>
+                  <ul class="drop-1">
+                    <li><a href="index.html">Новости</a></li>
+                    <li><a href="#blockquoteBlock">Отзывы</a></li>
+                    <li><a href="#team">Команда</a></li>
+                  </ul>
+                </li>
+                <li><a href="#services" class="hvr-underline-from-left">Услуги</a></li>
+                <li><a href="#features" class="hvr-underline-from-left">Продукция</a></li>
+                <li><a href="#" class="hvr-underline-from-left">Авторам</a></li>
+                <li><a href="#" class="hvr-underline-from-left">Портфолио</a></li>
+                <li><a href="#contacts" class="hvr-underline-from-left">Контакты</a></li>
+                <li><a href="#" id="cabinet"><i class="fa fa-user"></i>Личный кабинет</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--============================Карусель=========================-->
+  <!-- Индикаторы слайдов -->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators topIndicate">
+      <li data-target="#myCarousel" data-slide-to="0" class="active" ></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Контент слайда (slider wrap) -->   
+    <div class="carousel-inner" role="listbox">
+      <!--Первый слайд-->    
+      <div class="item active">
+        <img src="img/slider/ban1.jpg" style="height: auto;" alt="" oncontextmenu="return false;" />
+        <div class="carousel-caption">
+
+        </div>
+      </div>
+      <!--Второй слайд-->      
+      <div class="item">
+        <img src="img/slider/ban10.jpg" style="height: auto;" alt="" oncontextmenu="return false;" />
+        <div class="carousel-caption">
+
+        </div>
+      </div>
+      <!--Третий слайд-->      
+      <div class="item">
+        <img src="img/slider/ban3.jpg" style="height: auto;" alt="" oncontextmenu="return false;" />
+        <div class="carousel-caption">
+
+        </div>
+      </div>
+      <!-- Элементы управления -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      </a>
+    </div>
+    <!-- ==================Придание контейнеру вид книги============== -->    
+    <div class="bottom-fold">
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!--=======================Как мы работаем=========================-->
+  <div class="p44">
+    <div class="container">
+      <div class="row">
+        <div class="box">
+          <h2>Как мы работаем</h2>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="box">
+            <img src="img/icon/phone.svg" alt="" oncontextmenu="return false;" />
+            <h4>Звоните, <br/>уточняете детали</h4>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="box">
+            <img src="img/icon/calc.svg" alt="" oncontextmenu="return false;" />
+            <h4>Рассчитываем стоимость, <br/> получаем предоплату</h4>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="box">
+            <img src="img/icon/conection1.svg" alt="" oncontextmenu="return false;" />
+            <h4>Согласовываем макет,<br/> вносим правки</h4>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="box">
+            <img src="img/icon/aim1.svg" alt="" oncontextmenu="return false;" />
+            <h4>Выполняем <br/> и доставляем заказ</h4>
+          </div>
+        </div>                                                      
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!--=======================О нас и новости=========================-->
+    <section id="about">        
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="box">
+              <h2>ОБ ИЗДАТЕЛЬСТВЕ</h2>
+              <p>Наши технологии печати позволяют издать любой тираж: от 1 экземпляра и более 1000 экземпляров за короткий срок. Мы располагаем цифровым и офсетным оборудованием, что позволяет нам напечатать как большой, так и малый тираж с минимальными издержками. Наши производственные мощности позволяют изготовить изделие любого формата и в любом переплете.</p>
+            </div>
+
+            <ul class="features-list custom-list"> <h5>Почему стоит выбрать нас:</h5>
+              <li><i class="fa fa-check-square" aria-hidden="true"></i><span>Собственное высокотехнологичное производство</span></li>
+              <li><i class="fa fa-check-square" aria-hidden="true"></i><span>Полный спектр полиграфических услуг</span></li>
+              <li><i class="fa fa-check-square" aria-hidden="true"></i><span>Тираж от 1 экземпляра</span></li>
+              <li><i class="fa fa-check-square" aria-hidden="true"></i><span>Ризография</span></li>
+              <li><i class="fa fa-check-square" aria-hidden="true"></i><span>Печать на фотобумаге и холсте</span></li>
+              <li><i class="fa fa-check-square" aria-hidden="true"></i><span>Изготовление авторефератов</span></li>
+              <li><i class="fa fa-check-square" aria-hidden="true"></i><span>Переплет диссертаций</span></li>
+              <li><i class="fa fa-check-square" aria-hidden="true"></i><span>Сканирование, копирование</span></li>
+              <li><i class="fa fa-check-square" aria-hidden="true"></i><span>Изготовление книг в мягком и твердом переплетах</span></li>
+              <li><i class="fa fa-check-square" aria-hidden="true"></i><span>Подготовка оригинал-макета под печать </span></li>
+            </ul>  
+          </div>
+
+          <div class="col-sm-6">
+            <div class="brdr">
+              <h2>НОВОСТИ</h2>
+              <ul class="block">
+                <li>
+                  <time datetime="2017-05-27">27.05.2017</time>
+                  <p>Nasceus mus. Nulla dui. Fusceu giat malesu ada odio. Mauris </p>
+                  <a href="#" class="inform"> >> Подробнее</a>
+                </li>
+                <li>
+                  <time datetime="2017-05-15">15.05.2017</time>
+                  <p>Nasceus mus. Nulla dui. Fusceu giat malesu ada odio. Mauris </p>
+                  <a href="#" class="inform"> >> Подробнее</a>
+                </li>
+                <li>
+                 <time datetime="2017-05-01">01.05.2017</time>
+                 <p>Nasceus mus. Nulla dui. Fusceu giat malesu ada odio. Mauris </p>
+                 <a href="#" class="inform"> >> Подробнее</a>
+               </li>                                                
+             </ul>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+   <div class="divider"></div>
+
+   <!--=======================Лента с книгами=========================-->
+   <section id="books">
+    <div class="container">
+      <div class="row">
+        <div class="box">
+         <h2>КНИГИ НАШИХ АВТОРОВ</h2>
+       </div>
+
+       <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="bookColor"><img src="img\sours\Book1_color.png"></div>
+      </div>
+      
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="bookColor"><img src="img\sours\Book2_color.png"></div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="bookColor"><img src="img\sours\Book3_color.png"></div>
+      </div>  
+
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="bookColor"><img src="img\sours\Book4_color.png"></div>
+      </div>
+    </div>  
+  </div>
+  <div class="divider"></div>
+</section>
+<!--=======================Услуги=========================-->
+<section id="services">  
+  <div class="container">
+    <div class="row">
+      <div class="box">
+        <h2 id="services" style="padding-bottom: 10px;">НАШИ УСЛУГИ</h2>
+        <div class="lbrake"></div>
+        <h4>Мы помогаем вашему бизнесу развиваться и решим любую полиграфическую задачу <br/> от разработки дизайна до финальной сдачи тиража.</h4>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="services_col">
+          <a class="services_link" href="#">
+            <div class="services_img_box"><img class="services_img" src="img\sours\U1.jpg"></div>
+            <div class="services_content"><a class="hvr-underline-from-center"><h4 class="services_text">Книгоиздание</h4> </a>
+              <div class="divider1"></div>                 
+              <p class="text_sm">Большим и малым тиражем</p></div>
+            </a>
+          </div>
+        </div>    
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="services_col">
+            <a class="services_link" href="#">
+              <div class="services_img_box"><img class="services_img" src="img\sours\U2.jpg"></div>
+              <div class="services_content"><a class="hvr-underline-from-center"><h4 class="services_text">Офсетная печать</h4></a>
+                <div class="divider1"></div>
+                <p class="text_sm">Для больших тиражей</p></div>
+              </a>
+            </div>
+          </div>  
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="services_col">
+              <a class="services_link" href="#">
+                <div class="services_img_box"><img class="services_img" src="img\sours\U3.jpg"></div>
+                <div class="services_content"><a class="hvr-underline-from-center"><h4 class="services_text">Цифровая печать</h4></a>
+                  <div class="divider1"></div>
+                  <p class="text_sm">Для небольших и срочных задач</p></div>
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="services_col">
+                <a class="services_link" href="#">
+                  <div class="services_img_box"><img class="services_img" src="img\sours\U4.jpg"></div>
+                  <div class="services_content"><a class="hvr-underline-from-center"><h4 class="services_text">Широкоформатная печать</h4></a>
+                    <div class="divider1"></div>
+                    <p class="text_sm">Для крупных размеров</p></div>
+                  </a>
+                </div>
+              </div>
+            </div>       
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="services_col">
+                  <a class="services_link" href="#">
+                    <div class="services_img_box"><img class="services_img" src="img\sours\U5.jpg"></div>
+                    <div class="services_content"><a class="hvr-underline-from-center"><h4 class="services_text">Тиснение</h4></a>
+                      <div class="divider1"></div>
+                      <p class="text_sm">Для люксовых и имеджевых</p></div>
+                    </a>
+                  </div>
+                </div>                    
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                  <div class="services_col">
+                    <a class="services_link" href="#">
+                      <div class="services_img_box"><img class="services_img" src="img\sours\U6.jpg"></div>
+                      <div class="services_content"><a class="hvr-underline-from-center"><h4 class="services_text">Копировние</h4></a>
+                        <p class="text_sm">От фотографий до плакатов</p></div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="services_col">
+                      <a class="services_link" href="#">
+                        <div class="services_img_box"><img class="services_img" src="img\sours\U7.jpg"></div>
+                        <div class="services_content"><a class="hvr-underline-from-center"><h4 class="services_text">Послепечатная обработка</h4></a>
+                          <div class="divider1"></div>
+                          <p class="text_sm">Последние штрихи</p></div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                      <div class="services_col">
+                        <a class="services_link" href="#">
+                          <div class="services_img_box"><img class="services_img" src="img\sours\U8.jpg"></div>
+                          <div class="services_content"><a class="hvr-underline-from-center"><h4 class="services_text">Дизайн</h4></a>
+                            <div class="divider1"></div>
+                            <p class="text_sm">Разработка дизайна</p></div>
+                          </a>
+                        </div>
+                      </div> 
+                    </div>
+  </div>
+</section>
+<!--=======================Продукция=========================-->
+
+                  <section id="features">
+                    <div class="divider"></div>
+                    <div class="container">
+                      <div class="row">
+
+                        <div class="box">
+                          <h2 style="padding-bottom: 10px;">НАША ПРОДУКЦИЯ</h2>
+                          <div class="lbrake"></div>
+                          <h4>Мы помогаем вашему бизнесу развиваться и решим любую полиграфическую задачу <br/>
+                            от разработки дизайна до финальной сдачи тиража.</h4>
+                          </div>   
+
+                          <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="services-img"><img src="img\icon\book.svg" style="height: 85px;" oncontextmenu="return false;" /><p>Книги</p></div>
+                          </div>
+                          <div class="col-xs-12 col-sm-6 col-md-3">
+                           <div class="services-img"><img src="img\icon\katalog.svg" style="height: 85px;" oncontextmenu="return false;" /><p>Каталоги</p></div>
+                         </div>
+                         <div class="col-xs-12 col-sm-6 col-md-3">
+                          <div class="services-img"><img src="img\icon\booklet.svg" style="height: 85px;" oncontextmenu="return false;" /><p>Буклеты</p></div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                          <div class="services-img"><img src="img\icon\broshure.svg" style="height: 85px;" oncontextmenu="return false;" /><p>Брошюы</p></div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                          <div class="services-img"><img src="img\icon\flyer.svg" style="height: 85px;" oncontextmenu="return false;" /><p>Листовки</p></div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                          <div class="services-img"><img src="img\icon\poster.svg" style="height: 85px;" oncontextmenu="return false;" /><p>Плакаты</p></div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                          <div class="services-img"><img src="img\icon\news.svg" style="height: 85px;" oncontextmenu="return false;" /><p>Газеты</p></div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                         <div class="services-img"><img src="img\icon\calendar1.svg" style="height: 85px;" oncontextmenu="return false;" /><p>Календари</p></div>
+                       </div>
+                       <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="services-img"><img src="img\icon\sert.svg" style="height: 85px;" oncontextmenu="return false;" /><p>Папки</p></div>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="services-img"><img src="img\icon\post.svg" style="height: 85px;" oncontextmenu="return false;" /><p>Ежедневники</p></div>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="services-img"><img src="img\icon\notebook.svg" style="height: 85px;"><p>Блокноты</p></div>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="services-img"><img src="img\icon\news.svg" style="height: 85px;" oncontextmenu="return false;" /><p>Приглашения</p></div>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="services-img"><img src="img\icon\sert.svg" style="height: 85px;" oncontextmenu="return false;" /><p>Сертификаты</p></div>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="services-img"><img src="img\icon\post.svg" style="height: 85px;" oncontextmenu="return false;" /><p>Открытки</p></div>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="services-img"><img src="img\icon\sert.svg" style="height: 85px;" oncontextmenu="return false;" /><p>Визитки</p></div>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="services-img"><img src="img\icon\sert.svg" style="height: 85px;" oncontextmenu="return false;" /><p>Сувенирка</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!--=======================Отзывы=========================-->
+
+                <section id="blockquoteBlock" class="parallax">
+                  <div class="container">
+                    <div class="row">
+                      <div class="quoteZag">
+                        <h2>Отзывы</h2>
+                      </div>
+                      <div id="quote-carousel" class="carousel slide" data-ride="carousel">
+                        <!-- Carousel Slides / Quotes -->
+                        <div class="carousel-inner text-center">
+                          <!-- Quote 1 -->
+                          <div class="item active">
+                            <blockquote class="blockquote">
+                              <div class="row">
+                                <div class="col-sm-12">
+                                  <p>Здравствуйте! Получил  4 экз. книги «Солнечный ход» в мягком переплёте. Качество понравилось. </p>
+                                  <div class="autor">
+                                    <div class="author"><p>Гтвьпбь Влвдллавд</p></div>
+                                    <div class="author-info"><p>Автор книги «Солнечный ход»</p></div>
+                                  </div>
+                                </div>    
+                              </blockquote>
+                            </div>
+                            <!-- Quote 2 -->
+                            <div class="item">
+                              <blockquote class="blockquote">
+                                <div class="row">
+                                  <div class="col-sm-12">
+                                    <p>Для начала хочу поблагодарить весь коллектив издательства за чудесное исполнение и печать книги!<br/> Ребят, вы на высоте! Шикарное качество исполнения — не режет глаз даже то, что книга в мягкой обложке!<br/> Про начинку молчу: очень вкусно исполнено! Спасибо вам!</p>
+                                    <div class="author"><p>Гтвьпбь Влвдллавд</p></div>
+                                    <div class="author-info"><p>Автор книги «Политехники в странах африки»</p></div>
+                                  </div>
+                                </div>    
+                              </blockquote>
+                            </div> 
+                            <!-- Quote 3 -->
+                            <div class="item">
+                              <blockquote  class="blockquote">
+                                <div class="row">
+                                  <div class="col-sm-12">
+                                    <p>Ребят, вы на высоте! Шикарное качество исполнения — не режет глаз даже то, что книга в мягкой обложке!<br/> Про начинку молчу: очень вкусно исполнено! Спасибо вам!</p>
+                                    <div class="author"><p>Гтвьпбь Влвдллавд</p></div>
+                                    <div class="author-info"><p>Автор книги «Политехники в странах африки»</p></div> 
+                                  </div>
+                                </div>    
+                              </blockquote>
+                            </div>
+                          </div>
+                          <!-- Bottom Carousel Indicators -->
+                          <ol class="carousel-indicators quoteIndicate">
+                            <li data-target="#quote-carousel" data-slide-to="0" class="active" ></li>
+                            <li data-target="#quote-carousel" data-slide-to="1"></li>
+                            <li data-target="#quote-carousel" data-slide-to="2"></li>
+                          </ol>
+
+                        </div>  
+                      </div>
+                    </div>                
+                    <!-- Carousel Buttons Next/Prev -->
+                    <a class="left carousel-control" href="#quote-carousel" role="button" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    </a>
+                    <a class="right carousel-control" href="#quote-carousel" role="button" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    </a>
+
+
+                  </section> 
+                  <!--=======================Команда=========================-->
+
+                  <section id="team">
+                    <div class="container">
+                      <div class="row">
+
+                        <div class="team">
+                          <h2 class="teamZag" style="padding-bottom: 10px;">НАША КОМАНДА</h2>
+                          <div class="lbrake"></div>
+                          <h4>Основа нынешних и будующих свершений</h4>
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-xs-12 col-sm-6 col-md-3">
+                                <div class="box">
+                                  <div class="photo-person-180">
+                                    <div class="mask"></div>
+                                    <h5 class="name">Евгений</h5>
+                                    <p class="function">Директор ИПЦ</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-sm-6 col-md-3">
+                                <div class="box">
+                                  <div class="mask"></div>
+                                  <h5 class="name">Татьяна</h5>
+                                  <p class="function">Менеджер</p>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-sm-6 col-md-3">
+                                <div class="box">
+                                  <div class="mask"></div>
+                                  <h5 class="name">Ольга</h5>
+                                  <p class="function">Менеджер</p>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-sm-6 col-md-3">
+                                <div class="box">
+                                  <div class="mask"></div>
+                                  <h5 class="name">Екатерина</h5>
+                                  <p class="function">Менеджер</p>
+                                </div>
+                              </div>                                                      
+                            </div>
+                          </div>
+
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </section>
+
+                  <!--=======================Контакты=========================-->      
+                  <section id="contacts">
+                    <div class="container">
+                      <div class="row">
+
+                        <div class="contacts"><h2>КОНТАКТЫ</h2></div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+                          <address> 
+                            <div class="plase"><i class="fa fa-map-marker"></i><p class="adress">195251, Россия, Санкт-Петербург, Политехническая ул., 29</p></div><br/>
+                            <div class="plase"><i class="fa fa-phone"></i><p class="phone">(812) 552-77-17  |  552-65-92  |  555-66-16</p></div><br/>
+                            <div class="plase"><i class="fa fa-envelope"></i><p class="mail">info@gpupress.ru</p></div><br/>
+                          </address> 
+                          <div class="forma">
+                            <p>Вы можете отправить нам сообщение, заполнив форму</p>
+                            <form action="#"  method="POST" role="form">
+                              <input type="text" id="fname" class="form-control" name="firstname" placeholder="Введите ваше имя">
+                              <input type="text" id="fmail" class="form-control" name="e-mail" placeholder="Введите ваш e-mail">
+                              <textarea id="subject" class="form-control" name="subject" placeholder="Введите текст вашего сообщения" style="height:110px"></textarea>
+
+                              <div class="submit">
+                                <input type="submit" value="Отправить" id="button-form">
+                                <div class="ease"></div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+                          <div id="map_container"></div>
+                          <div id="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.382726317233!2d30.371730316099878!3d60.008728981901726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjDCsDAwJzMxLjQiTiAzMMKwMjInMjYuMSJF!5e0!3m2!1sru!2sru!4v1497473570757" width="550" height="450" frameborder="0" style="border:5px solid #fff;0" allowfullscreen></iframe>
+                          </div>
+
+
+
+
+
+                        </div>  
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+
+
+            </body>
+            </html>
