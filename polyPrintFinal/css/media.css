@@ -1,0 +1,312 @@
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1950px) {
+.carousel-caption {
+	top: 60px;
+}
+.carousel-inner .h1 {
+	font-size: 50px;
+	text-shadow: 3px 3px 8px #000;
+	margin-bottom: 20px;
+}
+.carousel-inner .h3 {
+	font-size: 17px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+}
+
+@media only screen and (max-width : 1650px) {
+ul.navbar-nav a{
+	font-size: 12px;
+	padding: 10px;
+}
+.carousel-caption {
+	top: 50px;
+}
+.carousel-inner .h1 {
+	font-size: 50px;
+	margin-bottom: 20;
+	text-shadow: 3px 3px 8px #000;
+}
+.carousel-inner .h3 {
+	font-size: 17px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+.btn {
+    font-size: 14px;
+    padding: 10px 22px;
+}
+.carousel-indicators li{
+	width: 10px;
+    height: 10px;
+}
+.carousel-indicators .active{
+	width: 11px;
+    height: 11px;
+}
+
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1500px) {
+ul.navbar-nav a{
+	font-size: 12px;
+	padding: 10px;
+}
+.carousel-caption {
+	top: 40px;
+}
+.carousel-inner .h1 {
+	font-size: 40px;
+	margin-bottom: 20;
+	text-shadow: 3px 3px 8px #000;
+}
+.carousel-inner .h3 {
+	font-size: 14px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.btn {
+    font-size: 14px;
+    padding: 10px 22px;
+}
+.carousel-indicators li{
+	width: 9px;
+    height: 9px;
+}
+.carousel-indicators .active{
+	width: 10px;
+    height: 10px;
+}
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1350px) {
+ul.navbar-nav a{
+	font-size: 12px;
+	padding: 10px;
+}
+.carousel-caption {
+	top: 30px;
+}
+.carousel-inner .h1 {
+	font-size: 35px;
+	margin-bottom: 0;
+	text-shadow: 3px 3px 8px #000;
+}
+.carousel-inner .h3 {
+	font-size: 14px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.carousel-inner .btn {
+    font-size: 10px;
+    padding: 10px 22px;
+}
+.carousel-indicators li{
+	width: 9px;
+    height: 9px;
+}
+.carousel-indicators .active{
+	width: 10px;
+    height: 10px;
+}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+ul.navbar-nav a{
+	font-size: 12px;
+	padding: 10px;
+}
+.carousel-caption {
+	top: 10px;
+}
+.carousel-inner .h1 {
+	font-size: 30px;
+	margin-bottom: 0;
+	text-shadow: 3px 3px 8px #000;
+}
+.carousel-inner .h3 {
+	font-size: 12px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.carousel-inner .btn {
+    font-size: 9px;
+    padding: 8px 16px;
+}
+.carousel-indicators li{
+	width: 9px;
+    height: 9px;
+}
+.carousel-indicators .active{
+	width: 10px;
+    height: 10px;
+}
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 950px) {
+ul.navbar-nav a{
+	font-size: 12px;
+	padding: 10px;
+}
+.carousel-caption {
+	top: 20px;
+}
+.carousel-inner .h1 {
+	font-size: 30px;
+	margin-bottom: 0;
+	text-shadow: 3px 3px 8px #000;
+}
+.carousel-inner .h3 {
+	font-size: 12px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.carousel-inner .btn  {
+    font-size: 9px;
+    padding: 8px 16px;
+}
+.carousel-indicators li{
+	width: 9px;
+    height: 9px;
+}
+.carousel-indicators .active{
+	width: 10px;
+    height: 10px;
+}
+}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 850px) {
+.navbar-toggle {
+	margin:  15px;
+	padding: 0;
+}
+.navbar-default .navbar-toggle {
+    border: none;
+}	
+.navbar-brand > img{
+	height: 40px;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+	color: #585858;
+	font-size: 11px;
+}
+.nav > li > a {
+    padding: 5px 7px !important;
+}
+.cabinet{
+	border: none;
+	margin: 0 5px;
+	padding: 0;
+}
+ul.navbar-nav a{
+	font-size: 9px;
+	padding: 5px;
+}
+.carousel-caption {
+	top: 0px;
+}
+.carousel-inner .h1 {
+	font-size: 18px;
+	margin-bottom: 0;
+	text-shadow: 3px 3px 8px #000;
+}
+.carousel-inner .h3 {
+	font-size: 10px;
+	margin-bottom: 15px;
+	margin-top: 10px !important;
+	text-align: center;
+}
+.carousel-inner .btn {
+    font-size: 7px;
+    padding: 8px 16px;
+}
+
+.carousel-indicators li{
+	width: 8px;
+    height: 8px;
+}
+.carousel-indicators .active{
+	width: 9px;
+    height: 9px;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+		#myCarousel {
+        width: 100%;
+        display: none;
+}	
+	ul.navbar-nav a{
+	font-size: 10px;
+}
+
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

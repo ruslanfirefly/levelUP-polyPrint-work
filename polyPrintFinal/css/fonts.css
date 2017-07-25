@@ -1,0 +1,64 @@
+/* font-family: "RobotoRegular"; */
+
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+    src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* font-family: "RobotoLight"; */
+
+@font-face {
+    font-family: "RobotoLight";
+    src: url("../fonts/RobotoLight/RobotoLight.eot");
+    src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"), url("../fonts/RobotoLight/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* font-family: "RobotoMedium"; */
+
+@font-face {
+    font-family: "RobotoMedium";
+    src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+    src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"), url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"), url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* font-family: "RobotoBold"; */
+
+@font-face {
+    font-family: "RobotoBold";
+    src: url("../fonts/RobotoBold/RobotoBold.eot");
+    src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* font-family: "HelveticaNeue-Regular"; */
+
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url("../fonts/HelveticaRegular/HelveticaNeue.eot");
+    src: url("../fonts/HelveticaRegular/HelveticaNeue.eot?#iefix")format("embedded-opentype"), url("../fonts/HelveticaRegular/HelveticaNeue.woff") format("woff"), url("../fonts/HelveticaRegular/HelveticaNeue.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* font-family: "HelveticaNeue-CondensedBlack"; */
+
+@font-face {
+    font-family: "HelveticaCondensedBlack";
+    src: url("../fonts/HelveticaCondensedBlack/HelveticaNeue-CondensedBlack.eot");
+    src: url("../fonts/HelveticaCondensedBlack/HelveticaNeue-CondensedBlack.eot?#iefix")format("embedded-opentype"), url("../fonts/HelveticaCondensedBlack/HelveticaNeue-CondensedBlack.woff") format("woff"), url("../fonts/HelveticaCondensedBlack/HelveticaNeue-CondensedBlack.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
